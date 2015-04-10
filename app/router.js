@@ -6,6 +6,17 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home', {path: '/'});
+
+  this.resource('products', function() {
+  	this.route('new');
+  });
+
+  this.resource('product', {
+  	path: '/product/:product_id'
+  });
+
+  this.route('login');
 });
 
 export default Router;

@@ -1,0 +1,19 @@
+<h4>Add New Post</h4>
+
+<form>
+	<div class="row">
+		<div class="large-12 columns">
+			<label>Add your Product's title here:
+    			{{input value=title placeholder="Title"}}
+    		</label>
+    		<label>Add your Product's image here:
+    			{{input value=image placeholder="Image"}}
+    		</label>
+    		{{textarea value=details placeholder="Details"}}		
+    	</div>
+    	<div class="large-12 columns">
+    		{{#link-to 'products' classNames="button alert"}}Cancle{{/link-to}}
+    		<button {{action "publishPost"}}>Publish</button>
+    	</div>
+    </div>
+</form>

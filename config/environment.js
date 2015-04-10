@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'app',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://product-store.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -25,6 +27,18 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    ENV.contentSecurityPolicy = {
+      'default-src': '\'self\' ',
+      'script-src': '\'self\' \'unsafe-eval\' \'unsafe-inline\'',
+      'font-src': '\'self\'',
+      'connect-src': '\'self\' *',
+      'img-src': '\'self\' data: http://*.com',
+      'style-src': '\'self\' \'unsafe-inline\'',
+      'media-src': '\'self\'',
+      'frame-src': '\'self\'',
+      'report-uri': '\'self\''
+    };
   }
 
   if (environment === 'test') {
