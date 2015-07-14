@@ -1,6 +1,10 @@
 <h1>Home!</h1>
 <section class="products row">
+	{{!-- Show featured banner --}}
 
+	{{!-- Show categories / departments --}}
+	{{!-- Show featured products --}}
+	{{!-- Show special ads --}}
 	<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
 	{{#each product in model}}
 		{{product-card product=product isCard=true}}

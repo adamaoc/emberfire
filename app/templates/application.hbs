@@ -1,26 +1,9 @@
 <div class="main-wrapper row">
-	
-	<nav class="site-nav small-12 medium-3 columns">
-		<header class="site-header">
-			Products Website!
-		</header>
-		<ul class="side-nav">
-			<li>{{#link-to 'home'}}Home{{/link-to}}</li>
-			<li>{{#link-to 'products'}}All Products{{/link-to}}</li>
-			<li class="divider"></li>
-			{{#if isLoggedin}}
-			<li><a href="#" {{action 'login'}}>logout</a></li>
-			<li><a href="#" {{action 'postProduct'}}>PostProduct</a></li>
-			{{else}}
-				<li><a href="#" {{action 'login'}}>login</a></li>
-			{{/if}}
-			{{!-- <li><a href="#">Link 3</a></li>
-			<li><a href="#">Link 4</a></li> --}}
-		</ul>
-	</nav>
-	
+
+	{{site-nav}}
+
 	<main class="content-wrap small-12 medium-9 columns">
-		{{outlet}}		
+		{{outlet}}
 	</main>
 
 </div>
