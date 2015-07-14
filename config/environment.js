@@ -30,7 +30,7 @@ module.exports = function(environment) {
 
     ENV.contentSecurityPolicy = {
       'default-src': '\'self\' ',
-      'script-src': '\'self\' \'unsafe-eval\' \'unsafe-inline\'',
+      'script-src': '\'self\' ',
       'font-src': '\'self\'',
       'connect-src': '\'self\' *',
       'img-src': '\'self\' data: http://*.com',
