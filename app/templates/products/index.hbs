@@ -1,16 +1,5 @@
 <h1>Products</h1>
 
 {{#each product in model}}
-
-	<div class="row product-list">
-		<div class="small-12 medium-3 columns img-wrap">
-			<img {{bind-attr src="product.image" alt="product.title"}} />
-		</div>
-		<div class="small-12 medium-9 columns details">
-			<h3>{{product.title}}</h3>
-			<p>{{product.details}}</p>
-			{{#link-to 'product' product}}Check it out{{/link-to}}
-		</div>
-	</div>
-	
+	{{product-card product=product}}
 {{/each}}

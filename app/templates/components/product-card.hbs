@@ -1,0 +1,20 @@
+{{#if isCard}}
+  <div class="img-wrap">
+    {{product-img product=product}}
+  </div>
+  <div class="details">
+    <h3>{{product.title}}</h3>
+    {{#link-to 'product' product}}Check it out{{/link-to}}
+  </div>
+{{else}}
+  <div class="row product-list">
+    <div class="small-12 medium-3 columns img-wrap">
+      {{product-img product=product}}
+    </div>
+    <div class="small-12 medium-9 columns details">
+      <h3>{{product.title}}</h3>
+      <p>{{product.details}}</p>
+      {{#link-to 'product' product}}Check it out{{/link-to}}
+    </div>
+  </div>
+{{/if}}

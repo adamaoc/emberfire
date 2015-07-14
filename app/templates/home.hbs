@@ -2,21 +2,9 @@
 <section class="products row">
 
 	<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-
 	{{#each product in model}}
-
-		<li class="product__box">
-			<div class="img-wrap">
-				<img {{bind-attr src="product.image" alt="product.title"}} />
-			</div>
-			<div class="details">
-				<h3>{{product.title}}</h3>
-				{{#link-to 'product' product}}Check it out{{/link-to}}
-			</div>
-		</li>
-		
+		{{product-card product=product isCard=true}}
 	{{/each}}
-
 	</ul>
 
 </section>
