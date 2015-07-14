@@ -1,3 +1,7 @@
+> This app was built as a playground for messing with `ember` and `emberfire` (`firebase`) - Many things are not working... Don't take this app as the way that Ember apps or Firebase should be written...    
+
+
+
 # App
 
 This README outlines the details of collaborating on this Ember application.
@@ -24,6 +28,7 @@ You will need the following things properly installed on your computer.
 
 * `ember server`
 * Visit your app at [http://localhost:4222](http://localhost:4222).
+* changed server port to not conflict with other ember apps I run... 
 
 ### Code Generators
 
