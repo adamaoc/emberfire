@@ -6,7 +6,7 @@
 	{{!-- Show featured products --}}
 	{{!-- Show special ads --}}
 	<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-	{{#each product in model}}
+	{{#each model as |product|}}
 		{{product-card product=product isCard=true}}
 	{{/each}}
 	</ul>
